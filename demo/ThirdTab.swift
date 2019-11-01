@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct NameUI: View {
+struct ThirdTab: View {
     @State private var name = "Prady"
-    @EnvironmentObject var names: NamesArray
+    @EnvironmentObject var names : NamesArray
     
     var body: some View {
         ZStack {
@@ -39,6 +39,6 @@ struct NameUI: View {
 
 struct ThirdTab_Previews: PreviewProvider {
     static var previews: some View {
-        NameUI().environmentObject(names)
+        ThirdTab()
     }
 }
